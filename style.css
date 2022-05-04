@@ -1,0 +1,323 @@
+*
+{
+    margin: 0%;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input
+{
+    width: 300px;
+}
+#textaddpost
+{
+    font-size:16px; 
+    height: 200px; 
+    min-width: 304px;
+    max-width: 304px;
+}
+#polewrite
+{
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 300px;
+    max-width: 600px;
+}
+.fon
+{
+    flex: 1;
+    flex-wrap: wrap;
+}
+.stroka
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.stolbec
+{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+.background-color
+{
+    background-color: rgb(114, 114, 114);
+}
+.block
+{
+    background-color: rgb(250, 250, 250);
+    box-shadow: 2px 2px rgb(48, 48, 48);
+    padding: 25px;
+    width: 600px;
+    height: auto;
+    margin: 10px;
+}
+footer
+{
+    z-index: 1;
+    background-color: white;
+    padding: 10px;
+    width: 100% px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    height: auto;
+    box-shadow: 0px -2px rgb(48, 48, 48);
+}
+.footer
+{
+    background-color: rgb(37, 37, 37);
+    padding: 10px;
+    width: 100% px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    height: auto;
+    color: #d1d1d1;
+    box-shadow: 0px -2px rgb(48, 48, 48);
+    z-index: 1;
+}
+.header_maxwidth
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    color: white;
+}
+.footer_maxwidth
+{
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.reklama
+{
+    overflow: scroll;
+    position: sticky;
+    display: block;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 2px 2px rgb(48, 48, 48);
+    padding: 10px;
+    width: 300px;
+    height: 600px;
+    margin: 10px;
+    margin-left: 0px;
+    top: 10px;
+}
+.reklama::-webkit-scrollbar
+{
+    width: 0px;
+}
+.list
+{
+    transition: 1s;
+    list-style: none;
+    padding: 0px;
+}
+.title
+{
+    border-bottom-width: 1px;
+    border-bottom-color: #000000;
+    border-bottom-style: solid;
+}
+li
+{
+    margin-top: 5px;
+    transition: 0.2s;
+}
+li:hover
+{
+    transform: translateX(1px);
+    color: rgb(0, 129, 69);
+    cursor: pointer;
+}
+.nazvanie
+{
+    margin: 10px;
+    margin-top: 15px;
+    border-bottom-width: 5px;
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(255, 45, 45);
+}
+.body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header
+{
+    box-shadow: 0px 2px rgb(48, 48, 48);
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70px;
+    z-index: 1;
+}
+span[data-podskazka] 
+{
+    position: relative;
+    text-decoration: underline;
+    color: #00F;
+    cursor: help;
+}
+span[data-podskazka]:hover::after 
+{
+    content: attr(data-podskazka);
+    position: absolute;
+    left: 0;
+    top: 18px;
+    min-width: 200px;
+    border: 1px #aaaaaa solid;
+    border-radius: 10px;
+    background-color: #f4faa4;
+    padding: 12px;
+    color: #000000;
+    font-size: 14px;
+    z-index: 1000;
+}
+.a
+{
+    font-size: 25px;
+    display:inline-block;
+    flex-direction: row;
+    transition: 0.5s;
+}
+.ssilki
+{
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.ssilki a
+{
+    color: #d1d1d1;
+    margin: 10px;
+    margin-top: 5px;
+}
+.ssilki a:hover
+{
+    transform: translateY(-1px);
+    color: rgb(238, 238, 238);
+}
+.burger
+{
+    display: none;
+    border-radius: 22px;
+}
+.stroka img
+{
+    height: 26px;
+    width: 26px;
+    margin-left: 5px;
+}
+.stroka a
+{
+    display: block;
+}
+.footer_ssilka:hover
+{
+    cursor: pointer;
+    color: aqua;
+    transition: 1s;
+}
+.footer_ssilka
+{
+    transition: 1s;
+}
+.nowrap
+{
+    flex-wrap: nowrap;
+}
+.smallwidth
+{
+    max-width: 800px;
+}
+.footer_maxwidth ul
+{
+    transition: 0s;
+    height: 5px;
+    font-size: 0px;
+}
+.ftr:hover ul
+{
+    transition: 0s;
+    font-size: 15px;
+    height: auto;
+}
+@media screen and (max-width: 850px) 
+{
+    footer
+    {
+        display: none;
+    }
+    .reklama
+    {
+        display: none;
+    }    
+    .burger
+    {
+        position: relative;
+        display: block;
+        margin: 10px;
+        width: 50px;
+        cursor: pointer;
+    }
+    .ssilki
+    {
+        padding: 10px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: -500px;
+        top: 70px;
+        transform: translateX(0px);
+        transition: 0.5s;
+        height: auto;
+        background-color: rgb(37, 37, 37);
+        z-index: 1;
+        border: 2px;
+        border-style: solid;
+    }
+    .ssilki.active {
+        transition: 0.5s;
+        transform: translateX(500px);
+    }
+    .footer
+    {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .footer_maxwidth
+    {
+        width: auto;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer img
+    {
+        height: 50px;
+        width: 50px;
+        margin: 5px;
+    }
+    .footer_ssilka
+    {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #d1d1d1;
+        padding: 10px;
+        margin: 5px;
+    }
+    .footer_ssilka:hover
+    {
+        box-shadow:0 0 15px #555;
+    }
+}
